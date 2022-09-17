@@ -20,7 +20,15 @@ public class HomeController {
 	}
 	@GetMapping("/home")
 	public String home () {
-		return "hellow world";
+		return "hello world";
+	}
+	@GetMapping("/login")
+	public String login () {
+		return "/login";
+	}
+	@GetMapping("/logout")
+	public String logout () {
+		return "/logout";
 	}
 	@PostMapping("/create/user")
 //	public String CtreateUser(@RequestParam String name,@RequestParam String username,@RequestParam String password) {
